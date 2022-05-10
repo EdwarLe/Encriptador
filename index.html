@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+            <link rel="stylesheet" href="reset.css">
+            <link rel="stylesheet" href="style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <main class="contenedor">
+            <div class="responsive">
+                <div class="logo">
+                    <img src="imagenes/Vector.png" alt="Logo de Alura" class="logo-alura">
+                    <h1 class="titulo">ENCRIPTADOR DE TEXTO</h1>
+                </div>
+                <div class="izquierdo">
+                    <textarea  id="input-texto" class="caja-izquierda" cols="30" rows="10" onclick='this.value=""'>Ingrese el texto aquí</textarea>
+                </div>
+                <div class="derecho">
+                    <img src="imagenes/buscando.png" alt="Persona con lupa" id="imagen-derecha">
+                    <h1 id="titulo-imagen">Ningún mensaje fue encontrado</h1>
+                    <textarea id="texto-derecho" cols="80" rows="8" readonly="readonly">Ingrese el texto que desees encriptar o desencriptar.</textarea>
+                    <button id="copiar">Copiar</button>
+                </div>
+                <div class="btns">
+                    <div id="exclamacion">
+                        <img src="imagenes/signo.png" alt="signo de exclamación" id="signo">
+                        <h6>Sólo letras minúsculas y sin acentos</h6>
+                    </div>
+                    <button id="btn-encriptar">Encriptar</button>
+                    <button id="btn-desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </main>
+        <script type="text/javascript" src="funciones.js"></script>
+    </body>
+</html>
